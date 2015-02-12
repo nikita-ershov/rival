@@ -1,0 +1,30 @@
+.menu-home-category {
+    font-size: 21px;
+    font-weight: 300;
+    
+    &__item {
+        margin: 15px 0 0;
+    }
+    &__link:link,
+    &__link {
+        position: relative;
+        padding: 5px 5px 5px 30px;
+        display: block;
+        color: #FFFFFF;
+        background: #4568a1;        
+        transition: background 0.2s;
+
+        &:before {
+            content: "\e801";
+            position: absolute;
+            left: 12px;
+            top: 6px;
+            font-size: 21px;
+            font-family: "icons";
+        }
+
+        &:hover {
+            background:#63ace8;
+        }
+    }
+}

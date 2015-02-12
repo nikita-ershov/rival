@@ -1,0 +1,113 @@
+::selection {
+    background: #4568a1;
+    color: #FFFFFF;
+}
+html {
+    position: relative;
+    min-height: 100%;
+    min-width: 990px;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143em;
+    color: #000000;
+    background: #f2f2f2;
+    min-width: 990px;
+    
+    margin-bottom: 176px;
+}
+
+p {
+    margin: 0 0 20px;
+    padding: 0;
+}
+.text {
+    &-left {
+        text-align: left;
+    }
+    &-right {
+        text-align: right;
+    }
+    &-center {
+        text-align: center;
+    }
+}
+
+.table {
+    width: 100%;
+    color: #5c616c;
+    
+    th {
+        font-weight: 700;
+        font-size: 11px;
+        text-transform: uppercase;
+        text-align: center;
+        vertical-align: top;
+        padding: 8px;
+        border-left: 1px solid #d3d3d3;
+        border-bottom: 1px solid #d3d3d3;
+        
+        &:first-child {
+            border-left: none;
+        }
+    }
+    td {
+        font-size: 14px;
+        text-align: center;
+        padding: 5px 8px;
+    }
+    
+    .highlight {
+        color: #4789b2;
+        font-weight: 700;
+    }
+    &_striped {
+        tr:nth-child(odd) {
+            background-color: #f9fafa;
+        }
+    }
+}
+.link-icon {
+    text-decoration: none;
+    
+    .link {
+        text-decoration: none;
+    }
+    &:hover {
+        text-decoration: none;        
+        .link {
+            text-decoration: underline;
+        }
+    }
+}
+.container {
+    min-width: 990px!important;
+    max-width: 1280px;
+    padding: 0;
+    
+    &__header {
+        height: 50px;
+        color: #666666;
+        padding: 15px 0 15px 22px;
+        position: relative;
+            
+        h4 {
+            font-size: 18px;
+            font-weight: 600;
+        }        
+        
+        &_centered {
+            padding: 15px;
+            text-align: center;
+        }
+    }
+}
+.row_table {
+    display: table;
+}
+.col-height {
+    display: table-cell;
+    float: none;
+    vertical-align:top;
+}

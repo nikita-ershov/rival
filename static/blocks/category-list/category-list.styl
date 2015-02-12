@@ -1,0 +1,53 @@
+.category-list {
+    margin-left: -8px;
+    margin-right: -8px;
+
+    .col-xs-3 {
+        padding: 0 8px 16px;
+        vertical-align: top;
+        display: inline-block;
+    }
+    &__item {
+        background: #ffffff;    
+        color: #414141;
+        display: block;
+        text-align: center;
+        transition: background 0.2s, color 0.2s;
+        padding: 5px 0 0;
+    
+        &:hover {
+            text-decoration: none;
+        
+            .category-list__title {
+                background: #2d59a1;
+                color: #FFFFFF;
+            }
+        }
+        
+    }
+    &__image {
+        display: block;
+        height: 130px;
+        position: relative;
+        overflow: hidden;
+        
+        img {
+            display: block;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            position: absolute;
+        }
+    }
+    &__title {
+        color: #414141;
+        font-size: 30px;
+        transition: background 0.2s, color 0.2s;
+        display: block;
+        line-height: 0.9em;
+        height: 85px;
+        padding: 15px;
+    }
+}

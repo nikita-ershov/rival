@@ -1,0 +1,78 @@
+.certificate-list {
+    margin-left: -8px;
+    margin-right: -8px;
+
+    .col-xs-4 {
+        padding: 0 8px 16px;
+        vertical-align: top;
+        display: inline-block;
+        text-align: center;
+    }
+    &__item {
+        color: #FFFFFF;
+        display: block;
+        position: relative;
+        overflow: hidden;
+        text-align: left;
+        font-size: 0;
+        margin: 0 auto;
+        width: 319px;
+    
+        img {
+            display: block;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        &:hover {            
+            text-decoration: none;
+            color: #FFFFFF;
+        
+            .certificate-list__info {
+                animation: slideUp 0.2s;
+                bottom: 0;
+            }
+        }
+        
+    }
+    &__info {
+        background: #4269aa;
+        background: rgba(66,105,170,0.9);
+        display: block;
+        position: absolute;
+        width: 100%;
+        bottom: -100%;
+        font-weight: 300;
+        padding: 10px 20px 15px;
+        color: #fff;
+        min-height: 225px;
+    }
+    &__type {
+        font-size: 36px;
+        display: block;
+        line-height: 1.1em;
+    }
+    &__title {
+        font-size: 20px;
+        display: block;
+        line-height: 0.9em;
+        margin-top: 30px;
+    }
+    &__mentor {
+        font-size: 16px;
+        display: block;
+        margin-top: 12px;
+    }
+    &__date {
+        font-size: 12px;
+        display: block;
+        margin-top: 12px;
+    }
+
+    &__buttons {
+        margin-bottom: 70px;
+        text-align: center;
+        .btn {
+            min-width: 320px;
+        }
+    }
+}

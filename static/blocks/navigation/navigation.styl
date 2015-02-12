@@ -1,0 +1,28 @@
+.navigation {
+    background: #2d59a1;
+    &__list {
+        color: #FFFFFF;
+        font-size: 0;
+    }
+    &__item {
+        display: inline-block;
+        font-size: 17px;
+
+        &.active {
+            
+            .navigation__link {
+                color: #416296;
+                font-weight: 500;
+                background: #FFFFFF;
+            }
+        }
+    }
+    a&__link {
+        color: #FFFFFF;
+        text-decoration: none;
+        display: block;
+        padding: 0 20px;
+        height: 50px;
+        line-height: 50px;
+    }
+}

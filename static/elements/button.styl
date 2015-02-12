@@ -1,0 +1,61 @@
+a.btn,
+a.btn:link,
+a.btn:visited,
+.btn {
+    display: inline-block;
+    font-size: 16px;
+    padding: 0 18px;
+    height: 42px;
+    line-height: 42px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 500;
+    background: #909090;
+    border: 1px solid #909090;
+    text-transform: uppercase;
+    text-align: center;
+    transition: background 0.2s, color 0.2s, border 0.2s;
+    
+    &:link,
+    &:visited,
+    &:hover {
+        text-decoration: none;
+    }
+    &:hover {
+        background: #b8b8b8;
+        border: 1px solid #b8b8b8;
+    }
+    &:active {
+        background: #a6a6a6;
+        border: 1px solid #a6a6a6;
+    }
+    &.btn-primary {        
+        background: #2d59a1;
+        border: 1px solid #2d59a1;
+        
+        &:hover {
+            background: #63ace8;
+            border: 1px solid #63ace8;
+        }
+        &:active {
+            background: #4490cf;
+            border: 1px solid #4490cf;
+        }
+    }
+    
+    &.btn-secondary {        
+        background: #FFFFFF;
+        color: #2d59a1;
+        border: 1px solid #2d59a1;
+        
+        &:hover {
+            background: #FFFFFF;
+            border: 1px solid #2d59a1;
+        }
+        &:active {
+            background: #FFFFFF;
+            border: 1px solid #2d59a1;
+        }
+    }
+
+}
