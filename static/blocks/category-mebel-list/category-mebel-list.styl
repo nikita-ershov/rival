@@ -1,0 +1,117 @@
+.category-mebel-list {
+    margin-left: -8px;
+    margin-right: -8px;
+    overflow: hidden;
+    margin-bottom: -16px;
+
+    .col-xs-3,
+    .col-xs-4 {
+        padding: 0 8px 16px;
+        vertical-align: top;
+        display: inline-block;
+    }
+    &__item {
+        background: #ffffff;    
+        color: #414141;
+        display: block;
+        padding: 0;
+        height: 375px;
+        position: relative;
+        overflow: hidden;
+    
+        &:hover {
+            text-decoration: none;
+        
+            .category-mebel-list__info {
+                background: #2d59a1;
+                color: #FFFFFF;
+            }
+            .category-mebel-list__link {
+                color: #FFFFFF;
+            }
+        }
+        
+    }
+    &__image {
+        display: block;
+        height: 160px;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+        
+        img {
+            display: block;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            position: absolute;
+        }
+    }
+
+    &__info {
+        transition: background 0.2s, color 0.2s;
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 15px 20px 40px;
+        min-height: 140px;
+    }
+
+    &__num {
+        position: absolute;
+        font-size: 16px;
+        font-weight: 700;
+        color: #FFFFFF;
+        background: #2d59a1;
+        top: -36px;
+        right: -36px;
+        line-height: 72px;
+
+        text-align: center;
+        width: 72px;
+        height: 72px;
+        border-radius: 36px;
+        padding: 15px 28px 0 0;
+    }
+
+    &__title {
+        color: #414141;
+        font-size: 20px;
+        display: block;
+        line-height: 1.2em;
+        padding: 10px 20px;
+        font-weight: 300;
+        height: 70px;
+    }
+
+    &__text {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 1.25em;
+        display: block;
+    }
+
+    &__link {
+        font-size: 16px;
+        font-weight: 300;
+        position: absolute;
+        right: 20px;
+        bottom: 15px;
+        color: #2d59a1;
+        transition: color 0.2s;
+    }
+
+    &__buttons {
+        margin-top: 16px;
+        margin-bottom: 50px;
+        text-align: center;
+
+        .btn {
+            min-width: 320px;
+        }
+    }
+}

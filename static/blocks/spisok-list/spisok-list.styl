@@ -1,0 +1,68 @@
+.spisok-list {
+    
+    &__item {
+        display: block;
+        margin: 0 0 16px;
+        background: #fff;
+        padding: 18px;
+        font-size: 16px;
+        font-weight: 300;
+        text-decoration: none;
+        position: relative;
+    
+        &:before {
+            content: "\e802";
+            display: block;
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            width: 24px;
+            text-align: center;
+            height: 40px;
+            line-height: 40px;
+            margin-top: -20px;
+            color: #bebebe;
+            font-family: 'icons';
+            font-size: 25px;
+        }
+    
+        &:after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+        
+        &:hover {
+            text-decoration: none;
+        
+            &:before {
+                color: #747474;
+            }
+            
+            .spisok-list__title {
+                font-weight: 400;
+            }
+        }
+    }
+
+    &__image {
+        float: left;
+        width: 230px;
+        text-align: center;
+    }
+    &__info {
+        margin-left: 250px;
+        margin-right: 70px;
+        display: block;
+    }
+    &__title {
+        color: #2d59a1;
+        font-size: 28px;
+        display: block;
+        line-height: 1em;
+    }
+    &__text {
+        display: block;
+        margin: 15px 0 0;
+    }
+}

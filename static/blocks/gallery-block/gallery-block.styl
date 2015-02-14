@@ -1,0 +1,92 @@
+.gallery-block {
+    background: #FFFFFF;
+    
+    &__image {
+        height: 350px;
+        margin: 20px 0;
+        text-align: center;
+        overflow: hidden;
+        position: relative;
+    
+        img {
+            display: block;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            position: absolute;
+        }
+    }
+
+    &__thimbs {
+        position: relative;
+        margin: 40px 0;
+        width: 581px;
+
+        &__list {
+            margin: 0 32px;
+            white-space:nowrap;
+            overflow: hidden;
+            font-size: 0;
+            width: 517px;
+            height: 82px;
+            overflow: hidden;
+        }
+        &__item {
+            width: 162px;
+            height: 82px;
+            overflow: hidden;
+            background: #FFFFFF;
+            border: 1px solid #dedede;
+            display: inline-block;
+            margin: 0 15px 0 0;     
+            cursor: pointer;  
+            position: relative;
+            overflow: hidden;
+
+            &.active {
+                border: 1px solid #7693c2;
+            }
+
+            img {
+                display: block;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                margin: auto;
+                position: absolute;
+            }
+        }
+    }
+    
+    &__prev,
+    &__next {
+        position: absolute;
+        top: 50%;
+        margin-top: -11px;
+        width: 0; 
+        height: 0; 
+        border-top: 11px solid transparent;
+        border-bottom: 11px solid transparent;
+        cursor: pointer;
+        display: block;
+    }
+
+    &__prev {
+        border-right: 17px solid #f0f0f0;
+        left: 0;
+        &:hover {
+            border-right: 17px solid #2d59a1;
+        }
+    }
+
+    &__next {
+        border-left: 17px solid #f0f0f0;    
+        right: 0;
+        &:hover {
+            border-left: 17px solid #2d59a1;
+        }
+    }
+}
